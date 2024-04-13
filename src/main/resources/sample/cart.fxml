@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #922952;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.cartController">
+   <children>
+      <Label fx:id="nome1" layoutX="30.0" layoutY="121.0" prefHeight="31.0" prefWidth="244.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="14.0" />
+         </font></Label>
+      <Button fx:id="b_incrementa" layoutX="288.0" layoutY="121.0" mnemonicParsing="false" onAction="#b_incrementa" prefHeight="31.0" prefWidth="28.0" text="+" />
+      <Button fx:id="b_decrementa" layoutX="354.0" layoutY="121.0" mnemonicParsing="false" onAction="#b_decrementa" prefHeight="31.0" prefWidth="28.0" text="-" />
+      <Label fx:id="quantità1" layoutX="330.0" layoutY="121.0" prefHeight="31.0" prefWidth="24.0" text="1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="90.0" text="Quantità:" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="quantità2" layoutX="330.0" layoutY="171.0" prefHeight="31.0" prefWidth="24.0" text="1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="b_incrementa2" layoutX="288.0" layoutY="171.0" mnemonicParsing="false" onAction="#b_incrementa2" prefHeight="31.0" prefWidth="28.0" text="+" />
+      <Button fx:id="b_decrementa2" layoutX="354.0" layoutY="171.0" mnemonicParsing="false" onAction="#b_decrementa2" prefHeight="31.0" prefWidth="28.0" text="-" />
+      <Button fx:id="b_incrementa3" layoutX="288.0" layoutY="220.0" mnemonicParsing="false" onAction="#b_incrementa3" prefHeight="31.0" prefWidth="28.0" text="+" />
+      <Button fx:id="b_decrementa3" layoutX="354.0" layoutY="220.0" mnemonicParsing="false" onAction="#b_decrementa3" prefHeight="31.0" prefWidth="28.0" text="-" />
+      <Label fx:id="quantità3" layoutX="330.0" layoutY="220.0" prefHeight="31.0" prefWidth="24.0" text="1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="b_incrementa4" layoutX="288.0" layoutY="270.0" mnemonicParsing="false" onAction="#b_incrementa4" prefHeight="31.0" prefWidth="28.0" text="+" />
+      <Button fx:id="b_incrementa5" layoutX="288.0" layoutY="318.0" mnemonicParsing="false" onAction="#b_incrementa5" prefHeight="31.0" prefWidth="28.0" text="+" />
+      <Label fx:id="quantità4" layoutX="330.0" layoutY="270.0" prefHeight="31.0" prefWidth="24.0" text="1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="b_decrementa4" layoutX="354.0" layoutY="270.0" mnemonicParsing="false" onAction="#b_decrementa4" prefHeight="31.0" prefWidth="28.0" text="-" />
+      <Button fx:id="b_decrementa5" layoutX="354.0" layoutY="318.0" mnemonicParsing="false" onAction="#b_decrementa5" prefHeight="31.0" prefWidth="28.0" text="-" />
+      <Label fx:id="quantità5" layoutX="330.0" layoutY="318.0" prefHeight="31.0" prefWidth="24.0" text="1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="117.0" layoutX="478.0" layoutY="356.0" startX="12.0" stroke="#fffdfd" />
+      <Label layoutX="514.0" layoutY="90.0" text="Totale" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="prezzo1" layoutX="514.0" layoutY="121.0" prefHeight="31.0" prefWidth="81.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="prezzo2" layoutX="514.0" layoutY="171.0" prefHeight="31.0" prefWidth="81.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="prezzo3" layoutX="514.0" layoutY="219.0" prefHeight="31.0" prefWidth="81.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="prezzo4" layoutX="514.0" layoutY="270.0" prefHeight="31.0" prefWidth="81.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="prezzo5" layoutX="514.0" layoutY="318.0" prefHeight="31.0" prefWidth="81.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_totale" layoutX="514.0" layoutY="356.0" prefHeight="31.0" prefWidth="81.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Hebrew Scholar" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_indietro" layoutX="16.0" layoutY="16.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="41.0" style="-fx-background-color: transparent;" text="&lt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt_compra" layoutX="506.0" layoutY="16.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Compra">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="tipo1" layoutX="30.0" layoutY="101.0" textFill="WHITE" />
+      <Label fx:id="tipo2" layoutX="30.0" layoutY="152.0" textFill="WHITE" />
+      <Label fx:id="tipo3" layoutX="30.0" layoutY="202.0" textFill="WHITE" />
+      <Label fx:id="tipo4" layoutX="30.0" layoutY="251.0" textFill="WHITE" />
+      <Label fx:id="tipo5" layoutX="30.0" layoutY="301.0" textFill="WHITE" />
+      <Label fx:id="nome2" layoutX="30.0" layoutY="171.0" prefHeight="31.0" prefWidth="244.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nome3" layoutX="30.0" layoutY="220.0" prefHeight="31.0" prefWidth="244.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nome4" layoutX="30.0" layoutY="270.0" prefHeight="31.0" prefWidth="244.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nome5" layoutX="30.0" layoutY="318.0" prefHeight="31.0" prefWidth="244.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="sconto1" layoutX="396.0" layoutY="128.0" prefHeight="17.0" prefWidth="87.0" textFill="WHITE" />
+      <Label fx:id="sconto2" layoutX="396.0" layoutY="178.0" prefHeight="17.0" prefWidth="87.0" textFill="WHITE" />
+      <Label fx:id="sconto3" layoutX="396.0" layoutY="227.0" prefHeight="17.0" prefWidth="81.0" textFill="WHITE" />
+      <Label fx:id="sconto4" layoutX="396.0" layoutY="277.0" prefHeight="17.0" prefWidth="81.0" textFill="WHITE" />
+      <Label fx:id="sconto5" layoutX="396.0" layoutY="325.0" prefHeight="17.0" prefWidth="81.0" textFill="WHITE" />
+      <Label layoutX="127.0" layoutY="18.0" prefHeight="31.0" prefWidth="189.0" text="Carello" textFill="WHITE">
+         <font>
+            <Font name="Snell Roundhand Bold" size="41.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

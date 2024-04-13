@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #922952;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.vinoController">
+   <children>
+      <Button fx:id="button_cart" layoutX="449.0" layoutY="24.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="128.0" text="Carrello">
+         <font>
+            <Font name="Arial Hebrew Scholar Bold" size="14.0" />
+         </font></Button>
+      <Button blendMode="LIGHTEN" layoutX="442.0" layoutY="116.0" mnemonicParsing="false" onAction="#bt_aggiungi" prefHeight="112.0" prefWidth="146.0" text="AGGIUNGI" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font></Button>
+      <Button fx:id="button_indietro" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="35.0" style="-fx-background-color: transparent;" text="&lt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="136.0" layoutY="-14.0" prefHeight="68.0" prefWidth="223.0" text="Lista dei vini" textFill="WHITE">
+         <font>
+            <Font name="Zapfino" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="477.0" layoutY="73.0" text="Singola " textFill="WHITE">
+         <font>
+            <Font name="Snell Roundhand Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="234.0" text="Cassa ( 6 bott.)" textFill="WHITE">
+         <font>
+            <Font name="Snell Roundhand Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button blendMode="LIGHTEN" layoutX="440.0" layoutY="274.0" mnemonicParsing="false" onAction="#bt_aggiungiCassa" prefHeight="112.0" prefWidth="146.0" text="AGGIUNGI" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <ScrollPane layoutY="87.0" prefHeight="314.0" prefWidth="431.0">
+         <content>
+            <TableView fx:id="id_table" prefHeight="314.0" prefWidth="431.0">
+              <columns>
+                <TableColumn fx:id="col_vino" prefWidth="212.0" text="Vino" />
+                <TableColumn fx:id="col_anno" minWidth="0.0" prefWidth="63.0" text="Anno" />
+                  <TableColumn fx:id="col_prezzo" prefWidth="66.0" text="Prezzo" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.compraController">
+   <children>
+      <AnchorPane prefHeight="88.0" prefWidth="407.0" style="-fx-background-color: #922952;">
+         <children>
+            <Label layoutX="91.0" layoutY="25.0" prefHeight="55.0" prefWidth="226.0" text="Inserisci informazioni" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="bt_esci" blendMode="LIGHTEN" layoutX="348.0" layoutY="13.0" mnemonicParsing="false" text="ESCI">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="24.0" layoutY="103.0" prefHeight="22.0" prefWidth="88.0" text="Paese">
+         <font>
+            <Font name="Luminari" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_paese" layoutX="14.0" layoutY="126.0" />
+      <Label layoutX="214.0" layoutY="102.0" prefHeight="22.0" prefWidth="88.0" text="Città">
+         <font>
+            <Font name="Luminari" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_città" layoutX="204.0" layoutY="125.0" prefHeight="0.0" prefWidth="160.0" />
+      <Label layoutX="24.0" layoutY="183.0" prefHeight="23.0" prefWidth="160.0" text="Indirizzo + n.civico">
+         <font>
+            <Font name="Luminari" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_indirizzo" layoutX="14.0" layoutY="206.0" prefHeight="25.0" prefWidth="210.0" />
+      <Label layoutX="249.0" layoutY="183.0" prefHeight="22.0" prefWidth="88.0" text="Cod. Postale">
+         <font>
+            <Font name="Luminari" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_post" layoutX="259.0" layoutY="205.0" prefHeight="25.0" prefWidth="68.0" />
+      <Label layoutX="24.0" layoutY="261.0" prefHeight="22.0" prefWidth="88.0" text="Telefono">
+         <font>
+            <Font name="Luminari" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_telefono" layoutX="14.0" layoutY="284.0" />
+      <Button fx:id="bt_acquisto" layoutX="226.0" layoutY="284.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="152.0" style="-fx-background-color: #922952;" text="Procedi all'acquisto" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.adminViniController">
+   <children>
+    <AnchorPane layoutY="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="161.0" prefWidth="600.0" style="-fx-background-color: #922952;">
+         <children>
+            <Button fx:id="button_aggiungi" layoutX="508.0" layoutY="110.0" mnemonicParsing="false" text="aggiungi" />
+            <Button fx:id="button_indietro" layoutX="14.0" layoutY="36.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="35.0" style="-fx-background-color: transparent;" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="49.0" prefHeight="104.0" prefWidth="208.0" text="Lista dei vini" textFill="WHITE">
+               <font>
+                  <Font name="Zapfino" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_vino" layoutX="323.0" layoutY="14.0" promptText="Vino">
+               <font>
+                  <Font name="Arial Hebrew Scholar" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf_anno" layoutX="323.0" layoutY="46.0" promptText="Anno" />
+            <TextField fx:id="tf_prezzo" layoutX="323.0" layoutY="78.0" promptText="Prezzo" />
+            <TextField fx:id="tf_fornitore" layoutX="323.0" layoutY="110.0" promptText="Fornitore" />
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutY="158.0" prefHeight="242.0" prefWidth="600.0">
+         <content>
+            <TableView fx:id="id_table" prefHeight="314.0" prefWidth="600.0">
+               <columns>
+                  <TableColumn fx:id="col_vino" prefWidth="212.0" text="Vino" />
+                  <TableColumn fx:id="col_anno" minWidth="0.0" prefWidth="63.0" text="Anno" />
+                  <TableColumn fx:id="col_prezzo" prefWidth="66.0" text="Prezzo" />
+                  <TableColumn fx:id="col_fornitore" prefWidth="206.0" text="Fornitore" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>
